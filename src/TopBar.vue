@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <flexbox class="bg-color">
+  <div class="top-pedding bg-color">
+    <flexbox>
       <flexbox-item>
         <div class="flex-demo">返回</div>
       </flexbox-item>
@@ -26,6 +26,10 @@
       text-align: center;  /*文本居中显示*/
       color: #000;
       background-color: #FFFFFF;
+    }
+
+     .top-pedding {
+      padding:10px 0px 10px 0px;
     }
 </style>
 <script>

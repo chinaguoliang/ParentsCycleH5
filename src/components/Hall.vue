@@ -1,8 +1,35 @@
 <template>
   <top-bar></top-bar>
-  <group title="cell demo">
-    <cell title="Vux" value="Cool" is-link></cell>
-  </group>
+  <flexbox class="bg-color">
+    <flexbox-item>
+      <div class="flex-demo">视频监控</div>
+    </flexbox-item>
+    <flexbox-item>
+      <div class="flex-demo">签到</div>
+    </flexbox-item>
+    <flexbox-item>
+      <div class="flex-demo">发布</div>
+    </flexbox-item>
+    <flexbox-item>
+      <div class="flex-demo">1</div>
+    </flexbox-item>
+  </flexbox>
+
+  <flexbox class="bg-color">
+    <flexbox-item>
+      <div class="flex-demo">2</div>
+    </flexbox-item>
+    <flexbox-item>
+      <div class="flex-demo">3</div>
+    </flexbox-item>
+    <flexbox-item>
+      <div class="flex-demo">4</div>
+    </flexbox-item>
+    <flexbox-item>
+      <div class="flex-demo">5</div>
+    </flexbox-item>
+  </flexbox>
+
 </template>
 
 <script>
@@ -15,7 +42,10 @@ export default {
   components: {
     Group,
     Cell,
-    TopBar
+    TopBar,
+    Divider,
+    FlexboxItem,
+    Flexbox
   },
   data () {
     return {
@@ -30,12 +60,15 @@ export default {
 </script>
 
 <style>
-.vux-demo {
-  text-align: center;
-}
 
-.logo {
-  width: 100px;
-  height: 100px
-}
+
+    .bg-color {
+      background-color: #FFFFFF;
+    }
+
+   .flex-demo {
+      text-align: center;  /*文本居中显示*/
+      color: #000;
+      background-color: #FFFFFF;
+    }
 </style>
