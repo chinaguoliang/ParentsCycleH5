@@ -36,6 +36,7 @@
 import Group from 'vux/src/components/group'
 import Cell from 'vux/src/components/cell'
 import TopBar from '../TopBar'
+import * as GlobalConfig from '../GlobalConfig.js'
 import {Divider,FlexboxItem,Flexbox} from 'vux/src/components'
 
 export default {
@@ -55,6 +56,10 @@ export default {
       // its initial state.
       msg: 'Hello World!'
     }
+  },
+  ready(){
+      var requestUrl = GlobalConfig.BASE_URL + GlobalConfig.ATTENDANCE_GET_ALL_LOCATION;
+     alert(requestUrl);
   }
 }
 </script>
